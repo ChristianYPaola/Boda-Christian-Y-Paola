@@ -1,0 +1,508 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Waiting+for+the+Sunrise&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    text-align: center;
+}
+
+.names h1 {
+    font-family: "Ribeye", serif;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #3e4b4b; /* Cor verde eucalipto */
+    text-transform: uppercase;
+}
+
+.names h2 {
+     font-family: "Unkempt", cursive;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #3e4b4b; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.names h2 hr {
+    flex: 1; /* Linha ocupa espaço disponível */
+    border: 1px solid #6D8F8E;
+    margin: 0 10px; /* Espaçamento entre a linha e o texto */
+}
+.names h1:last-of-type {
+    margin-bottom: 20px; /* Espaçamento entre "PAOLA" e o texto abaixo */
+}
+
+p {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic; /* Apenas se não quiser usar <em> */
+}
+
+
+/*SESSÃO 2*/
+
+.bendicion {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff; /* Fundo branco */
+}
+
+.heart {
+    width: 40px;
+    height: 40px;
+    background-color: #6D8F8E; /* Cor verde eucalipto */
+    position: relative;
+    transform: rotate(-45deg);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #6D8F8E;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -20px;
+    left: 0;
+}
+
+.heart::after {
+    left: 20px;
+    top: 0;
+}
+
+.bendicion h3 {
+    font-family: "Kiwi Maru", serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.padres {
+    margin-top: 20px;
+}
+
+.padres-couple {
+    margin-bottom: 10px;
+}
+
+.padres p {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.4rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.separator-line {
+    width: 50%;
+    margin: 20px auto;
+    border: none;
+    border-top: 2px dashed #6D8F8E; /* Linha desenhada em verde eucalipto */
+}
+
+
+/* Sección 3 - ¡Nos Casamos! */
+.nos-casamos {
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    padding: 10px 0; /* Diminui ainda mais o padding geral da seção */
+}
+
+.nos-casamos h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.7rem;
+    color: #6D8F8E; /* Cor verde eucalipto */
+    margin-bottom: 5px; /* Reduz ainda mais a margem inferior do título */
+}
+
+.nos-casamos .image-container {
+    width: 100%; /* Ocupa 100% da largura */
+}
+
+.nos-casamos .image-container img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço ao redor */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+}
+
+
+.nos-casamos p {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 0px; /* Aproxima mais o texto da imagem */
+    width: 70%; /* Define a largura do texto */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Seção 4 - Data */
+.date-section {
+    background-color: #ffffff; /* Fundo branco */
+    padding-top: 0px; /* Espaço entre a sessão anterior */
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.date-left, .date-right {
+    text-align: center;
+    flex: 1;
+}
+
+.date-left hr, .date-right hr {
+    border: 0;
+    border-top: 2px solid #6D8F8E;; /* Cor verde eucalipto */
+    width:100%;
+    margin: 5px auto;
+}
+
+.date-left p, .date-right p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #555;
+    margin: 5px 0; /* Ajuste o espaçamento */
+}
+
+.date-center {
+    flex: 1;
+    text-align: center;
+    margin-top: -40px; /* Sobe os textos centrais */
+}
+
+.date-center h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem; /* Tamanho grande para o número */
+    margin: 0;
+    color: #6D8F8E;
+}
+
+.date-center h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-top: -15px; /* Espaçamento de 3px entre o 11 e o 2025 */
+    color: #555;
+}
+
+/* Estilo do Botão */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Garante centralização do botão */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.schedule-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6D8F8E; /* Cor verde eucalipto */
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Diminuindo o padding */
+    font-size: 0.8rem; /* Diminuindo o tamanho da fonte */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px; /* Diminuindo o espaçamento entre botão e ícone */
+    
+}
+
+.schedule-button i {
+    margin-right: 4px; /* Diminuindo a distância entre ícone e texto do botão */
+}
+
+.icon-container {
+    text-align: center; /* Centraliza o ícone abaixo do botão */
+    margin-top: 5px; /* Pequena distância entre o botão e o ícone */
+}
+
+.mouse-icon {
+    font-size: 0.8rem; /* Diminuindo o tamanho do ícone da mão */
+    height: 16px; /* Diminuindo a altura do ícone */
+    line-height: 16px; /* Centraliza o ícone verticalmente */
+}
+
+.schedule-button:hover {
+    background-color: #5a7574; /* Cor ao passar o mouse */
+}
+
+.temporizador {
+    display: flex;
+    justify-content: center; /* Alinha os quadrados no centro */
+    margin-top: 40px; /* Espaçamento acima do temporizador */
+}
+
+.quadrado {
+    width: 80px; /* Largura fixa */
+    height: 80px; /* Altura fixa */
+    display: flex;
+    flex-direction: column; /* Para empilhar os textos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    border: 2px solid #6D8F8E; /* Borda verde eucalipto */
+    border-radius: 8px; /* Borda arredondada */
+    margin: 0 10px; /* Espaçamento horizontal entre os quadrados */
+    background-color: white; /* Cor de fundo dos quadrados */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+.quadrado span {
+    display: block;
+    font-size: 1.5rem; /* Tamanho da fonte dos números */
+    font-weight: bold;
+}
+
+.quadrado span:last-child {
+    font-size: 1rem; /* Tamanho da fonte para 'DIAS', 'HORAS', etc. */
+}
+/* Sección 5 - Localización */
+.localizacion {
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+}
+
+.localizacion .icon-container {
+    margin: 20px 0;
+}
+
+.localizacion i {
+    font-size: 3rem; /* Tamanho dos ícones */
+    color: #819891; /* Cor verde eucalipto */
+}
+
+.event-info {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.location-button {
+    font-family: "Kiwi Maru", serif;
+    background-color: #6D8F8E; /* Cor verde eucalipto */
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Diminuindo o padding */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    border-radius: 20px; /* Botão arredondado */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.location-button:hover {
+    background-color: #5a7574; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação menor */
+}
+
+.location-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+/*sessão 6*/ 
+
+.presentes {
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+}
+
+.present-info {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.divider {
+    border: 1px solid #6D8F8E; /* Cor do divisor */
+    margin: 20px 0; /* Espaço acima e abaixo do divisor */
+}
+
+.bank-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    text-align: center; /* Centraliza o texto */
+}
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Garante centralização do botão */
+}
+
+
+.wedding-list-button {
+    font-family: "Kiwi Maru", serif;
+    background-color: #6D8F8E; /* Cor verde eucalipto */
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Diminuindo o padding */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    border-radius: 20px; /* Botão arredondado */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.wedding-list-button:hover {
+    background-color: #5a7574; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação menor */
+}
+
+
+/* assistencia*/
+.informacoes {
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+}
+
+.info-text {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.5rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.important-text {
+    font-family: "Kiwi Maru", serif;
+    font-size: 1.3rem;
+    color: #555;
+    margin: 20px 0; /* Aumentando a margem para separar do texto anterior */
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Garante centralização do botão */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.confirmation-button {
+    font-family: "Kiwi Maru", serif;
+    background-color: #6D8F8E; /* Cor verde eucalipto */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Espaçamento entre botão e ícone */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.confirmation-button:hover {
+    background-color: #5a7574; /* Cor ao passar o mouse */
+}
+
+/* Seção de Fotos */
+.fotos {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.fotos h2 {
+    font-family: "Kiwi Maru", serif;
+    font-size: 2.2rem;
+    color: #6D8F8E; /* Cor verde eucalipto */
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Para o efeito de 'snap' */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Para que as imagens não encolham */
+    width: 80%; /* Ajuste conforme necessário */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+    scroll-snap-align: start; /* Efeito de 'snap' */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+}
