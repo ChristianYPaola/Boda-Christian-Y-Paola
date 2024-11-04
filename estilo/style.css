@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Waiting+for+the+Sunrise&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap');
@@ -15,6 +15,52 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
 
+/*titulo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Kiwi+Maru&family=WindSong:wght@400;500&display=swap');
+
+
+/*textos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Corinthia:wght@400;700&family=Kiwi+Maru&family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Corinthia:wght@400;700&family=Encode+Sans+SC:wght@100..900&family=Kiwi+Maru&family=WindSong:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'minhafonte';
+    src: url('/fonts/') format('opentype');
+}
+
+/* Apenas para telas de desktop */
+@media (min-width: 790px) {
+    /* Centralizar o layout em telas maiores, simulando uma tela de celular */
+    .mobile-view-container {
+        width: 450px; 
+        max-height: 100vh; 
+        margin: 0 auto; 
+        border: 1px solid #cccccc; 
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15), 0px 5px 15px rgba(0, 0, 0, 0.05); /* Efeito de sombra dupla */
+        overflow-y: auto; 
+        overflow-x: hidden;
+    }
+
+    /* Garantindo que a altura ocupe toda a tela */
+    html, body {
+        margin: 0; 
+        height: 100vh; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+}
+button {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+p {
+    color: rgb(90, 87, 87) !important; 
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1rem !important;
+}
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +75,8 @@ body, html {
 a {
     text-decoration: none;
 }
+
+
 
 .hero {
     display: flex;
@@ -58,11 +106,16 @@ a {
 }
 
 .names h1 {
-    font-family: "Ribeye", serif;
-    font-size: 2.5rem;
+    font-family: "Corinthia", cursive;
+    font-size: 4rem;
     margin: 0;
-    color: #3e4b4b; /* Cor verde eucalipto */
-    text-transform: uppercase;
+    color: #6D7A35; /* Cor verde eucalipto */
+    
+}
+
+.meio {
+    font-family: "Corinthia" !important;
+    font-size: 2.5rem !important;
 }
 
 .names h2 {
@@ -77,86 +130,75 @@ a {
 
 .names h2 hr {
     flex: 1; /* Linha ocupa espaço disponível */
-    border: 1px solid #6D8F8E;
+    border: 1px solid #6D7A35;
     margin: 0 10px; /* Espaçamento entre a linha e o texto */
 }
 .names h1:last-of-type {
     margin-bottom: 20px; /* Espaçamento entre "PAOLA" e o texto abaixo */
 }
 
-p {
-    font-family: "Kiwi Maru", serif;
-    font-size: 1.2rem;
+.meio p  {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
     color: #555;
-    font-style: italic; /* Apenas se não quiser usar <em> */
+    font-style: italic;
+}
+.names h2 {
+    font-family: "Unkempt", cursive;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #3e4b4b; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.names h2 img {
+    width: 45%; 
+    height: auto; 
+    margin: 0 10px; 
+}
 
 /*SESSÃO 2*/
 
 .bendicion {
+    margin-top: 40px;
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff; /* Fundo branco */
-}
-
-.heart {
-    width: 40px;
-    height: 40px;
-    background-color: #6D8F8E; /* Cor verde eucalipto */
-    position: relative;
-    transform: rotate(-45deg);
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.heart::before,
-.heart::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-color: #6D8F8E;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.heart::before {
-    top: -20px;
-    left: 0;
-}
-
-.heart::after {
-    left: 20px;
-    top: 0;
+    background-color: #fff;
 }
 
 .bendicion h3 {
-    font-family: "Kiwi Maru", serif;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #6D7A35;
+    margin-bottom: 22px;
 }
 
 .padres {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os elementos */
 }
 
 .padres-couple {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .padres p {
-    font-family: "Kiwi Maru", serif;
-    font-size: 1.4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 0.6rem !important;
     color: #555;
     margin: 5px 0;
 }
 
-.separator-line {
-    width: 50%;
-    margin: 20px auto;
-    border: none;
-    border-top: 2px dashed #6D8F8E; /* Linha desenhada em verde eucalipto */
+.separator-image {
+    width: 70px; 
+    height: auto;
 }
 
 
@@ -168,9 +210,9 @@ p {
 }
 
 .nos-casamos h2 {
-    font-family: "Great Vibes", cursive;
+    font-family: "Corinthia", cursive;
     font-size: 2.7rem;
-    color: #6D8F8E; /* Cor verde eucalipto */
+    color: #6D7A35; /* Cor verde eucalipto */
     margin-bottom: 5px; /* Reduz ainda mais a margem inferior do título */
 }
 
@@ -180,18 +222,18 @@ p {
 
 .nos-casamos .image-container img {
     width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaço ao redor */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove padding */
+    height: auto; 
+    display: block;
+    margin: 0; 
+    padding: 0; 
 }
 
 
 .nos-casamos p {
-    font-family: "Kiwi Maru", serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.3rem;
     color: #555;
-    margin-top: 0px; /* Aproxima mais o texto da imagem */
+    margin-top: 0px; 
     width: 70%; /* Define a largura do texto */
     margin-left: auto;
     margin-right: auto;
@@ -199,9 +241,39 @@ p {
 }
 
 /* Seção 4 - Data */
+
+.date-image {
+    width: 75%; /* A imagem ocupará 100% da largura do contêiner */
+    height: auto; /* A altura será proporcional */
+    margin-bottom: 0px; 
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.date-left, .date-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-center {
+    text-align: center;
+}
+
+.eucalipto-linha {
+    width: 100%;
+    max-width: 120px;
+    height: auto; 
+    margin: 10px 0; 
+}
+
 .date-section {
-    background-color: #ffffff; /* Fundo branco */
-    padding-top: 0px; /* Espaço entre a sessão anterior */
+    background-color: #ffffff;
+    padding-top: 0px;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -212,6 +284,7 @@ p {
     align-items: center;
     margin: 0 auto;
     width: 70%;
+    margin-bottom: 6rem;
 }
 
 .date-left, .date-right {
@@ -221,7 +294,7 @@ p {
 
 .date-left hr, .date-right hr {
     border: 0;
-    border-top: 2px solid #6D8F8E;; /* Cor verde eucalipto */
+    border-top: 2px solid #6D7A35;; /* Cor verde eucalipto */
     width:100%;
     margin: 5px auto;
 }
@@ -243,7 +316,7 @@ p {
     font-family: 'Playfair Display', serif;
     font-size: 5rem; /* Tamanho grande para o número */
     margin: 0;
-    color: #6D8F8E;
+    color: #6D7A35;
 }
 
 .date-center h3 {
@@ -251,6 +324,51 @@ p {
     font-size: 1.5rem;
     margin-top: -15px; /* Espaçamento de 3px entre o 11 e o 2025 */
     color: #555;
+}
+
+.temporizador-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: baseline; 
+    gap: 0; 
+    width: 70%; 
+    margin: 0 auto; 
+}
+
+.temporizador-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Faz com que cada item ocupe uma largura igual */
+}
+
+.temporizador {
+    font-size: 2rem; /* Tamanho dos números */
+    font-weight: bold;
+}
+
+.labels {
+    font-size: 0.7rem; /* Tamanho reduzido das letras */
+    font-weight: normal;
+    margin-top: 0.2rem;
+    text-transform: uppercase;
+}
+
+.separador {
+    font-size: 2rem; /* Tamanho dos ':' */
+    font-weight: bold;
+    display: flex; /* Para centralizar verticalmente */
+    align-items: center; /* Centraliza o ':' com os números */
+    height: 100%; /* Garantir que ocupe toda a altura do contêiner */
+    margin: 0 0.2rem; /* Espaçamento lateral para os ':' */
+}
+  
+
+.h2-date{
+    color: #6D7A35;
+    margin-bottom: -30px;
+    font-family: "Corinthia", cursive;
+    font-size: 3rem;
 }
 
 /* Estilo do Botão */
@@ -265,7 +383,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #6D8F8E; /* Cor verde eucalipto */
+    background-color: #6D7A35; /* Cor verde eucalipto */
     color: white;
     border: none;
     padding: 6px 12px; /* Diminuindo o padding */
@@ -308,7 +426,7 @@ p {
     flex-direction: column; /* Para empilhar os textos verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
-    border: 2px solid #6D8F8E; /* Borda verde eucalipto */
+    border: 2px solid #6D7A35; /* Borda verde eucalipto */
     border-radius: 8px; /* Borda arredondada */
     margin: 0 10px; /* Espaçamento horizontal entre os quadrados */
     background-color: white; /* Cor de fundo dos quadrados */
@@ -324,59 +442,115 @@ p {
     font-size: 1rem; /* Tamanho da fonte para 'DIAS', 'HORAS', etc. */
 }
 /* Sección 5 - Localización */
-.localizacion {
+#localizacao {
     text-align: center;
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #fff; /* Fundo branco */
     padding: 20px;
 }
 
-.localizacion .icon-container {
-    margin: 20px 0;
+.titulo-secao {
+    font-size: 1.8rem;
+    color: #4E7B6D; /* Cor verde eucalipto */
+    margin-bottom: 20px;
 }
 
-.localizacion i {
-    font-size: 3rem; /* Tamanho dos ícones */
-    color: #819891; /* Cor verde eucalipto */
+.evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.event-info {
-    font-family: "Kiwi Maru", serif;
-    font-size: 1.2rem;
-    color: #555;
-    margin: 10px 0;
-    width: 60%;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
+.icone-imagem {
+    width: 80px; /* Aumenta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
 }
 
-.location-button {
-    font-family: "Kiwi Maru", serif;
-    background-color: #6D8F8E; /* Cor verde eucalipto */
-    color: white;
-    border: none;
-    padding: 12px 24px; /* Diminuindo o padding */
-    font-size: 1.1rem; /* Tamanho da fonte */
-    border-radius: 20px; /* Botão arredondado */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+.evento-eucalipto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icone-imagem-eucalipto {
+    width: 120px; /* Aumenta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 1rem; /* Espaçamento entre a imagem e o texto */
+}
+
+p {
+    font-size: 1rem;
+    color: #333; /* Cor do texto */
+}
+
+
+.button a {
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.button {
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #6D7A35; 
+    border: 2px solid #6D7A35; 
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #92a247;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px b(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  
+  
+
+.local {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333; /* Cor do texto */
 }
-
-.location-button:hover {
-    background-color: #5a7574; /* Cor ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de elevação menor */
-}
-
-.location-name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    color: #555;
-    margin-top: 20px;
-}
-
-
 /*sessão 6*/ 
+
+.presentes .button{
+    color: #6D7A35;
+    border: 2px solid #6D7A35;
+}
+
+.presentes .button::before{
+    background-color: #92a247;
+}
 
 .presentes {
     text-align: center;
@@ -385,14 +559,19 @@ p {
 }
 
 .present-info {
-    font-family: "Kiwi Maru", serif;
-    font-size: 1.2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.1rem;
     color: #555;
     margin: 10px 0;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .divider {
-    border: 1px solid #6D8F8E; /* Cor do divisor */
+    border: 1px solid #6D7A35; /* Cor do divisor */
     margin: 20px 0; /* Espaço acima e abaixo do divisor */
 }
 
@@ -400,7 +579,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #555;
-    margin: 10px 0;
+    margin: 35px 0;
     text-align: center; /* Centraliza o texto */
 }
 .button-container {
@@ -412,7 +591,7 @@ p {
 
 .wedding-list-button {
     font-family: "Kiwi Maru", serif;
-    background-color: #6D8F8E; /* Cor verde eucalipto */
+    background-color: #6D7A35; /* Cor verde eucalipto */
     color: white;
     border: none;
     padding: 12px 24px; /* Diminuindo o padding */
@@ -430,49 +609,43 @@ p {
 
 
 /* assistencia*/
-.informacoes {
-    text-align: center;
-    background-color: #ffffff; /* Fundo branco */
-    padding: 20px;
-}
 
-.info-text {
-    font-family: "Kiwi Maru", serif;
-    font-size: 1.5rem;
-    color: #555;
-    margin: 10px 0;
-}
-
-.important-text {
-    font-family: "Kiwi Maru", serif;
+.informacoes h2{
     font-size: 1.3rem;
-    color: #555;
-    margin: 20px 0; /* Aumentando a margem para separar do texto anterior */
 }
 
-.button-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Garante centralização do botão */
-    align-items: center; /* Alinha verticalmente os itens */
-}
-
-.confirmation-button {
-    font-family: "Kiwi Maru", serif;
-    background-color: #6D8F8E; /* Cor verde eucalipto */
-    color: white;
-    border: none;
-    padding: 8px 16px;
+.informacoes p {
     font-size: 0.9rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px; /* Espaçamento entre botão e ícone */
-    transition: background-color 0.3s; /* Transição suave */
+}
+.informacoes {
+    display: flex; /* Utiliza flexbox para dividir a seção em duas partes */
+    justify-content: space-between; /* Distribui o espaço entre as partes */
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    padding: 20px; /* Adiciona um espaço interno */
+    margin-top: 50px; /* Aumenta a distância entre esta seção e a seção acima */
 }
 
-.confirmation-button:hover {
-    background-color: #5a7574; /* Cor ao passar o mouse */
+.informacoes-esquerda {
+    flex: 1; /* Permite que a parte esquerda ocupe espaço proporcionalmente */
+    margin-right: 20px; /* Espaço à direita da parte esquerda */
 }
+
+.informacoes-direita {
+    flex: 1; /* Permite que a parte direita ocupe espaço proporcionalmente */
+    margin-top: 05px;
+}
+
+.botao-confirma {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 20px; /* Espaço acima do botão */
+    padding: 10px 10px; /* Espaçamento interno do botão */
+    background-color: #6D7A35; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border:none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
 
 /* Seção de Fotos */
 .fotos {
@@ -482,9 +655,9 @@ p {
 }
 
 .fotos h2 {
-    font-family: "Kiwi Maru", serif;
-    font-size: 2.2rem;
-    color: #6D8F8E; /* Cor verde eucalipto */
+    font-family: "Corinthia", cursive;
+    font-size: 2.5rem;
+    color: #6D7A35; /* Cor verde eucalipto */
     margin-bottom: 20px;
 }
 

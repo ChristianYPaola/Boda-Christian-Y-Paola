@@ -16,6 +16,6 @@ const x = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector(".temporizador").innerHTML = "Tempo esgotado!";
+        document.querySelector(".temporizador-container").innerHTML = "Tempo esgotado!";
     }
 }, 1000);
