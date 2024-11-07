@@ -54,6 +54,15 @@
         color-scheme: light;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    /* Caso o navegador prefira o tema escuro, forçamos o tema claro */
+    html, body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+    }
+}
+
 button {
     font-family: 'Montserrat', sans-serif !important;
 }
