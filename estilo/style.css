@@ -50,6 +50,7 @@
         display: flex; 
         justify-content: center; 
         align-items: center; 
+        background-color: white !important;
     }
 }
 button {
@@ -70,7 +71,7 @@ p {
 body, html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
+    background-color: white !important;
 }
 
 a {
