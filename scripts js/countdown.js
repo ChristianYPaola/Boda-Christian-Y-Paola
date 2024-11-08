@@ -19,3 +19,21 @@ const x = setInterval(function() {
         document.querySelector(".temporizador-container").innerHTML = "Tempo esgotado!";
     }
 }, 1000);
+
+// Detecta o modo escuro do sistema
+function checkDarkMode() {
+    const heroImage = document.getElementById('hero-image');
+    
+    // Verifica se o sistema está em modo dark
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        heroImage.src = 'imagens/foto para modo dark.png'; // Altere para a imagem dark
+    } else {
+        heroImage.src = 'imagens/foto nova.png'; // Caso não esteja em modo dark, mantém a imagem original
+    }
+}
+
+// Chama a função para verificar o modo assim que a página for carregada
+window.addEventListener('load', checkDarkMode);
+
+// Adiciona um ouvinte de evento para verificar caso o modo de cor seja alterado
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkDarkMode);
