@@ -26,7 +26,7 @@ function checkDarkMode() {
     
     // Verifica se o sistema está em modo dark
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        heroImage.src = 'imagens/foto para modo dark.png'; // Altere para a imagem dark
+        heroImage.src = 'imagens/mododark.png'; // Altere para a imagem dark
     } else {
         heroImage.src = 'imagens/foto nova.png'; // Caso não esteja em modo dark, mantém a imagem original
     }
