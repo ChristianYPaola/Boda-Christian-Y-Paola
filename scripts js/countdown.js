@@ -20,20 +20,17 @@ const x = setInterval(function() {
     }
 }, 1000);
 
-// Detecta o modo escuro do sistema
-function checkDarkMode() {
-    const heroImage = document.getElementById('hero-image');
-    
-    // Verifica se o sistema está em modo dark
+function changeImageBasedOnTheme() {
+    const image = document.getElementById('imagem-principal');
+
+    // Verifica se o modo escuro está ativado
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        heroImage.src = 'imagens/mododark.png'; // Altere para a imagem dark
+        image.src = 'imagens/mododark.png';  // Imagem para modo escuro
     } else {
-        heroImage.src = 'imagens/foto nova.png'; // Caso não esteja em modo dark, mantém a imagem original
+        image.src = 'imagens/foto-nova.png';  // Imagem para modo claro
     }
 }
 
-// Chama a função para verificar o modo assim que a página for carregada
-window.addEventListener('load', checkDarkMode);
-
-// Adiciona um ouvinte de evento para verificar caso o modo de cor seja alterado
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkDarkMode);
+// Detecta a mudança de tema automaticamente
+window.addEventListener('load', changeImageBasedOnTheme); // Aplica logo ao carregar a página
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeImageBasedOnTheme);
